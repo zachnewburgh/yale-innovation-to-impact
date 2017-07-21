@@ -1,0 +1,59 @@
+.accent {
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial;
+    line-height: 24px;
+    font-size: 14px;
+    padding: 0 20px;
+    text-align: justify;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ol {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    #about-content {
+        margin-top: 2.5vh;
+    }
+
+    ol {
+        display: block;
+        justify-content: left;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #about-content {
+        font-size: 16px;
+        flex: 1
+    }
+
+    ol {
+        display: block;
+        justify-content: left;
+        flex: 2;
+        margin-top: 50px;
+    }
+
+    .wrapper {
+        width: 90vw;
+        display: flex;
+    }
+}

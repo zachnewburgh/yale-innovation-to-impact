@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+    font-family: Arial;
+    padding: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    .wrapper {
+        width: 50vw;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .container {
+        font-size: 36px;
+    }
+
+    .wrapper {
+        width: 75vw;
+    }
+}

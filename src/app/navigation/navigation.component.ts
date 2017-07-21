@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navigation.component.css']
 })
 export class NavigationComponent implements OnInit {
+  displayNav: boolean;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  toggleNav() {
+    this.displayNav = !this.displayNav;
+  }
+
+  go(coord: number) {
+    window.scrollTo(0, coord);
   }
 
 }
