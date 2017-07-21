@@ -1,7 +1,14 @@
 <div class="wrapper">
-  <app-navigation></app-navigation>
+  <div class="menu-btn-container">
+    <i id="menu-btn" class="material-icons" (click)="toggleNav()">menu</i>
+  </div>
+  <ul class="navigation" [hidden]="!displayNav">
+    <a class="nav-links" href="#about"><li>About</li></a>
+    <a class="nav-links" href="#team"><li>Team</li></a>
+    <a class="nav-links" href="#apply"><li>Apply</li></a>
+  </ul>
   <app-splash></app-splash>
-  <app-about></app-about>
-  <app-team></app-team>
-  <app-apply></app-apply>
+  <app-about id="about"></app-about>
+  <app-team id="team"></app-team>
+  <app-apply id="apply"></app-apply>
 </div>

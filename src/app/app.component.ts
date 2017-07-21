@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  displayNav: boolean;
+
+  constructor() { }
+
+  toggleNav() {
+    this.displayNav = !this.displayNav;
+  }
 }
