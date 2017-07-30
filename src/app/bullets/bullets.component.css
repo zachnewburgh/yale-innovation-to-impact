@@ -1,14 +1,21 @@
 .bullet-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: 'Arial';
     text-align: center;
     height: 100vh;
-    padding: 0 30px;
+     padding: 0 50px; 
     font-size: 14px;
 }
 
-.blue-background {
-    background-color: #BCD8F8;
+.bullet-title {
+    font-weight: 700;
+    color: darkblue;
+    font-size: 18px;
+}
+
+.bullet {
+    padding-bottom: 40px;
 }
