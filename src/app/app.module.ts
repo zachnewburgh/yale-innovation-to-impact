@@ -6,6 +6,7 @@ import { SplashComponent } from './splash/splash.component';
 import { AboutComponent } from './about/about.component';
 import { TeamComponent } from './team/team.component';
 import { ApplyComponent } from './apply/apply.component';
+import { BulletsComponent } from './bullets/bullets.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { ApplyComponent } from './apply/apply.component';
     SplashComponent,
     AboutComponent,
     TeamComponent,
-    ApplyComponent
+    ApplyComponent,
+    BulletsComponent
   ],
   imports: [
     BrowserModule
