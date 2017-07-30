@@ -1,12 +1,12 @@
 .bullet-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     font-family: 'Arial';
     text-align: center;
     height: 100vh;
-     padding: 0 50px; 
+    padding: 0 50px; 
     font-size: 14px;
 }
 
@@ -17,5 +17,5 @@
 }
 
 .bullet {
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 }
