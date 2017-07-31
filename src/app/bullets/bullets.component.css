@@ -6,7 +6,7 @@
     font-family: 'Arial';
     text-align: center;
     height: 100vh;
-    padding: 0 50px; 
+    padding: 10px 50px; 
     font-size: 14px;
 }
 
@@ -14,8 +14,4 @@
     font-weight: 700;
     color: darkblue;
     font-size: 18px;
-}
-
-.bullet {
-    padding-bottom: 60px;
 }
