@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 10% 0;
+    padding: 5% 0;
     background-color: #13417F;
     color: white;
 }
@@ -22,4 +22,10 @@
 .social-name {
     align-self: center;
     padding-left: 5px;
+}
+
+@media screen and (min-width: 500px) {
+    #links {
+        height: 60vh;
+    }
 }
