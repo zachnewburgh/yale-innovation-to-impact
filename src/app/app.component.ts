@@ -13,4 +13,9 @@ export class AppComponent {
   toggleNav() {
     this.displayNav = !this.displayNav;
   }
+
+  scrollTo(section: string) {
+    this.toggleNav();
+    return location.hash = `#${section}`;
+  }
 }

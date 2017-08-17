@@ -1,12 +1,17 @@
 <div class="wrapper">
-  <div class="menu-btn-container">
-    <i id="menu-btn" class="material-icons" (click)="toggleNav()">menu</i>
-  </div>
-  <ul class="navigation" [hidden]="!displayNav">
-    <a class="nav-links" href="#about"><li>About</li></a>
-    <a class="nav-links" href="#team"><li>Team</li></a>
-    <a class="nav-links" href="#apply"><li>Apply</li></a>
-  </ul>
+  <header id="menu">
+      <i id="menu-btn" class="material-icons" (click)="toggleNav()">menu</i>
+      <div class="link clickable" (click)="scrollTo('about')">The Program</div>
+      <div class="link clickable" (click)="scrollTo('bullets')">Objectives</div>
+      <div class="link clickable" (click)="scrollTo('team')">Team</div>
+      <div class="link clickable" (click)="scrollTo('apply')">Apply</div>
+  </header>
+  <nav id="navigation" [hidden]="!displayNav">
+    <div class="nav-link" (click)="scrollTo('about')">The Program</div>
+    <div class="nav-link" (click)="scrollTo('bullets')">Objectives</div>
+    <div class="nav-link" (click)="scrollTo('team')">Team</div>
+    <div class="nav-link" (click)="scrollTo('apply')">Apply</div>
+  </nav>
   <app-splash></app-splash>
   <app-about id="about"></app-about>
   <app-bullets id="bullets"></app-bullets>
