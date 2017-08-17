@@ -1,27 +1,47 @@
-<div class="container">
-  <div class="wrapper">
-    <div class="team-title">
-      <h1>The Team</h1>
+<div id="team">
+  <div id="team-title">
+    <h2 class="title">THE TEAM</h2>
+  </div>
+  <div id="seth" class="clickable" [title]="teamMembers['sethFeuerstein']" (click)="openPage('sethFeuerstein')">
+    <div class="team-img">
+      <img src="../../assets/sf-sm.jpg">
     </div>
-    <div>
-      <img class="team-img" src="../../assets/sf-sm.jpg" alt="">
-      <br>
-      <a href="http://psychiatry.yale.edu/people/seth_feuerstein.profile"><strong>Seth Feuerstein, MD, JD</strong></a><br>Program Director (PI)
+    <div class="team-name">Seth Feuerstein, MD, JD</div>
+    <div class="team-role">Program Director (PI)</div>
+  </div>
+  <div id="patricia" class="clickable" [title]="teamMembers['patriciaSimon']" (click)="openPage('patriciaSimon')">
+    <div class="team-img">
+      <img src="../../assets/ps-sm.jpg">
     </div>
-    <div>
-      <img class="team-img" src="../../assets/ps-sm.jpg" alt="">
-      <br>
-      <a href="https://medicine.yale.edu/psychiatry/people/p_simon.profile"><strong>Patricia Simon, PhD</strong></a><br>Program Director
+    <div class="team-name">Patricia Simon, PhD</div>
+    <div class="team-role">Program Director</div>
+  </div>
+  <div id="erika" class="clickable" [title]="teamMembers['erikaSmith']" (click)="openPage('erikaSmith')">
+    <div class="team-img">
+      <img src="../../assets/es-bg.jpg">
     </div>
-    <div>
-      <img class="team-img" src="../../assets/jm-sm.jpg" alt="">
-      <br>
-      <a href="http://ycmd.yale.edu/people/janie-merkel"><strong>Janie Merkel, PhD</strong></a><br>Advisor
+    <div class="team-name">Erika Smith, MBA</div>
+    <div class="team-role">Advisor</div>
+  </div>
+  <div id="janie" class="clickable" [title]="teamMembers['janieMerkel']" (click)="openPage('janieMerkel')">
+    <div class="team-img">
+      <img src="../../assets/jm-sm.jpg">
     </div>
-    <div>
-      <img class="team-img" src="../../assets/es-bg.jpg" alt="">
-      <br>
-      <a href="http://ocr.yale.edu/about-ocr/our-staff/erika-smith"><strong>Erika Smith, MBA</strong></a><br>Advisor
+    <div class="team-name">Janie Merkel, PhD</div>
+    <div class="team-role">Advisor</div>
+  </div>
+  <div id="rick" class="clickable" [title]="teamMembers['rickHunt']" (click)="openPage('rickHunt')">
+    <div class="team-img">
+      <img src="../../assets/rh-bg.jpg">
     </div>
+    <div class="team-name">Rick Hunt, MBA</div>
+    <div class="team-role">Faculty/Mentor Lead</div>
+  </div>
+  <div id="joanne" class="clickable" [title]="teamMembers['joanneRichardson']" (click)="openPage('joanneRichardson')">
+    <div class="team-img">
+      <img src="../../assets/jr-sm.jpg">
+    </div>
+    <div class="team-name">Joanne Richardson, BS</div>
+    <div class="team-role">Program Coordinator</div>
   </div>
 </div>

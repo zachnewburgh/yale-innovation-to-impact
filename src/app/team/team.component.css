@@ -1,49 +1,68 @@
-.container {
-    height: 100vh;
-    background-color: #BCD8F8;
-    text-align: center;
-    padding: 10px;
-    font-family: Arial;
-    font-size: 12px;
-    display: flex;
-    justify-content: center;
-}
-
-.wrapper {
+#team {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 2.5fr 2.5fr 2.5fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-areas: 
+        "title title"
+        "seth patricia"
+        "erika janie"
+        "rick joanne";
+    padding: 7.5% 5%;
+    color: #69696B;
+    font-size: 0.9em;
 }
 
-.team-img {
-    max-height: 25vh;
-    border-radius: 150px;
+#team-title {
+    grid-area: title;
+    text-align: center;
+
 }
 
-.team-title {
-    grid-column: 1 / 3;
-    font-size: 16px;
+#seth {
+    grid-area: seth;
 }
 
-a {
-    text-decoration: none;
-    color: black;
+#patricia {
+    grid-area: patricia;
 }
 
-a:hover {
-    color: blue;
+#erika {
+    grid-area: erika;
 }
 
-@media only screen and (min-width: 768px) {
+#janie {
+    grid-area: janie;
+}
 
-    .wrapper {
-        width: 75vw; 
+#rick {
+    grid-area: rick;
+}
+
+#joanne {
+    grid-area: joanne;
+}
+
+.team-img, .team-name, .team-role {
+    text-align: center;
+}
+
+.team-img > img {
+    max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    #team {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 2.5fr 2.5fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        grid-template-areas: 
+            "title title title"
+            "seth patricia erika"
+            "janie rick joanne";
+        font-size: 1.05em;
     }
-
-    .team-img {
-        max-height: 33vh;
-    }
-
-    .team-title {
-        font-size: 24px;
-    }
 }
+    
