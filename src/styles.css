@@ -2,4 +2,47 @@
 
 body {
     margin: 0;
+    font-family: AvenirNext;
+}
+
+#author {
+    display: none;
+}
+
+@font-face {
+    font-family: BebasNeue;
+    src: url('./assets/fonts/bebas-neue/bebas-neue-reg.eot');
+    src: url('./assets/fonts/bebas-neue/bebas-neue-reg.eot?#iefix') format('embedded-opentype'),
+         url('./assets/fonts/bebas-neue/bebas-neue-reg.woff') format('woff'),
+         url('./assets/fonts/bebas-neue/bebas-neue-reg.ttf')  format('truetype'),
+         url('./assets/fonts/bebas-neue/bebas-neue-reg.svg#svgFontName') format('svg');
+}
+
+@font-face {
+    font-family: BebasNeue;
+    font-weight: bold;
+    src: url('./assets/fonts/bebas-neue/bebas-neue-bold.eot');
+    src: url('./assets/fonts/bebas-neue/bebas-neue-bold.eot?#iefix') format('embedded-opentype'),
+         url('./assets/fonts/bebas-neue/bebas-neue-bold.woff') format('woff'),
+         url('./assets/fonts/bebas-neue/bebas-neue-bold.ttf')  format('truetype'),
+         url('./assets/fonts/bebas-neue/bebas-neue-bold.svg#svgFontName') format('svg');
+}
+
+@font-face {
+    font-family: AvenirNext;
+    src: url('./assets/fonts/avenir-next/avenir-next-reg.eot');
+    src: url('./assets/fonts/avenir-next/avenir-next-reg.eot?#iefix') format('embedded-opentype'),
+         url('./assets/fonts/avenir-next/avenir-next-reg.woff') format('woff'),
+         url('./assets/fonts/avenir-next/avenir-next-reg.ttf')  format('truetype'),
+         url('./assets/fonts/avenir-next/avenir-next-reg.svg#svgFontName') format('svg');
+}
+
+@font-face {
+    font-family: AvenirNext;
+    font-weight: bold;
+    src: url('./assets/fonts/avenir-next/avenir-next-bold.eot');
+    src: url('./assets/fonts/avenir-next/avenir-next-bold.eot?#iefix') format('embedded-opentype'),
+         url('./assets/fonts/avenir-next/avenir-next-bold.woff') format('woff'),
+         url('./assets/fonts/avenir-next/avenir-next-bold.ttf')  format('truetype'),
+         url('./assets/fonts/avenir-next/avenir-next-bold.svg#svgFontName') format('svg');
 }
