@@ -1,17 +1,101 @@
-.bullet-container {
+#bullets {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    font-family: 'Arial';
-    text-align: center;
-    height: 100vh;
-    padding: 10px 50px; 
-    font-size: 14px;
+    color: white;
+}
+
+#bullets > div {
+    padding: 5% 5% 10%;
 }
 
 .bullet-title {
-    font-weight: 700;
-    color: darkblue;
-    font-size: 18px;
+    font-family: AvenirNext;
+    font-weight: 100;
+    font-size: 1em;
+}
+
+.bullet-description {
+    font-size: 0.9em;
+    opacity: 0.65;
+}
+
+#bullets-first {
+    background-color: #DD6E2D;
+    grid-area: bullet-first;
+}
+
+#bullets-second {
+    background-color: #D6AF23;
+    grid-area: bullet-second;
+}
+
+#bullets-third {
+    background-color: #99A843;
+    grid-area: bullet-third;
+}
+
+#bullets-fourth {
+    background-color: #16A093;
+    grid-area: bullet-fourth;
+}
+
+#img-first {
+    display: none;
+    grid-area: img-first;
+    background: url('../../assets/yale-lab.jpg') no-repeat center;
+    background-size: cover;
+}
+
+#img-second {
+    display: none;
+    grid-area: img-second;
+    background: url('../../assets/yale-buildings1.jpg') no-repeat center;
+    background-size: cover;
+}
+
+#img-third {
+    display: none;
+    grid-area: img-third;
+    background: url('../../assets/yale-buildings2.jpg') no-repeat center;
+    background-size: cover;
+}
+
+#img-fourth {
+    display: none;
+    grid-area: img-fourth;
+    background: url('../../assets/yale-campus.jpg') no-repeat center;
+    background-size: cover;
+}
+
+@media screen and (min-width: 768px) {    
+    #bullets {
+        padding: 25px;
+        background-color: grey;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+            "img-first bullet-first"
+            "bullet-second img-second"
+            "img-third bullet-third"
+            "bullet-fourth img-fourth";
+        font-size: 1.15em;
+        grid-gap: 25px;
+    }
+
+    #img-first {
+        display: block;
+    }
+    
+    #img-second {
+        display: block;
+    }
+    
+    #img-third {
+        display: block;
+    }
+    
+    #img-fourth {
+        display: block;
+    }
 }
