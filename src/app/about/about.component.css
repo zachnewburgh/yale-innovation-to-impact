@@ -1,65 +1,16 @@
-.accent {
-    font-weight: bold;
+#about {
+    padding: 8%;
+    text-align: center;
+    color: #69696B;
 }
 
-.container {
-    display: flex;
-    align-items: center;
-    height: 100vh;
-    font-family: Arial;
-    line-height: 24px;
-    font-size: 14px;
-    padding: 0 20px;
+#about > .description {
     text-align: justify;
-    flex-direction: column;
-    justify-content: center;
 }
 
-ol {
-    display: none;
-}
-
-@media only screen and (min-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-
-    #about-content {
-        margin-top: 2.5vh;
-    }
-
-    ol {
-        display: block;
-        justify-content: left;
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-    .container {
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .program-title {
-        font-size: 24px;
-    }
-
-    #about-content {
-        font-size: 18px;
-        flex: 1
-    }
-
-    ol {
-        display: block;
-        justify-content: left;
-        flex: 2;
-        margin-top: 50px;
-        font-size: 18px;
-        margin-left: 50px;
-    }
-
-    .wrapper {
-        width: 90vw;
-        display: flex;
+@media screen and (min-width: 768px) {
+    #about {
+        padding: 2% 15% 10%;
+        font-size: 1.25em;
     }
 }
