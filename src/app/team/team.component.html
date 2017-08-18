@@ -1,6 +1,6 @@
 <div id="team">
   <header id="team-title">
-    <h2 class="title">THE TEAM</h2>
+    <h2 class="title">{{title}}</h2>
   </header>
   <section *ngFor="let member of teamMembers" [id]="member.id" class="clickable" [title]="member.url" (click)="openPage(member.url)">
     <div class="team-img">

@@ -7,10 +7,13 @@ import { ITeamMember } from './team-member.interface';
   styleUrls: ['./team.component.css']
 })
 export class TeamComponent implements OnInit {
-
+  title: string;
   teamMembers: ITeamMember[];
 
-  constructor() {
+  constructor() {}
+
+  ngOnInit() {
+    this.title = 'THE TEAM';
     this.teamMembers = [
       {
         id: 'seth',
@@ -54,10 +57,8 @@ export class TeamComponent implements OnInit {
         role: 'Program Coordinator',
         url: 'http://people.yale.edu/search/joanne_richardson.profile'
       }
-    ]
+    ];
   }
-
-  ngOnInit() {}
 
   openPage(url: string): void {
     window.open(url);
