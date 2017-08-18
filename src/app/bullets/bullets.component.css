@@ -4,19 +4,8 @@
     color: white;
 }
 
-#bullets > div {
+#bullets > app-bullet {
     padding: 5% 5% 10%;
-}
-
-.bullet-title {
-    font-family: AvenirNext;
-    font-weight: 100;
-    font-size: 1em;
-}
-
-.bullet-description {
-    font-size: 0.9em;
-    opacity: 0.65;
 }
 
 #bullets-first {

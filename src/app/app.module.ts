@@ -7,6 +7,7 @@ import { AboutComponent } from './about/about.component';
 import { TeamComponent } from './team/team.component';
 import { ApplyComponent } from './apply/apply.component';
 import { BulletsComponent } from './bullets/bullets.component';
+import { BulletComponent } from './bullets/bullet/bullet.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { BulletsComponent } from './bullets/bullets.component';
     AboutComponent,
     TeamComponent,
     ApplyComponent,
-    BulletsComponent
+    BulletsComponent,
+    BulletComponent
   ],
   imports: [
     BrowserModule

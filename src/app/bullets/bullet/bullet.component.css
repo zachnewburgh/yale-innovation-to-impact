@@ -1,0 +1,10 @@
+.bullet-title {
+    font-family: AvenirNext;
+    font-weight: 100;
+    font-size: 1em;
+}
+
+.bullet-description {
+    font-size: 0.9em;
+    opacity: 0.65;
+}

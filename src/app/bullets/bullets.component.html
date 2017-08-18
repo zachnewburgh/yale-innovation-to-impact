@@ -1,30 +1,10 @@
-<div id="bullets">
-  <div id="img-first"></div>
-  <div id="bullets-first">
-    <h3 class="bullet-title">1. FIVE-DAY BOOTCAMP IN PRODUCT DEVELOPMENT AND ENTREPRENEURSHIP</h3>
-    <div class="bullet-description">
-      Learn how to identify viable commercial products and efficiently take your product to market.
-    </div>
-  </div>
-  <div id="bullets-second">
-    <h3 class="bullet-title">2. POST-BOOTCAMP VIRTUAL OFFICE HOURS</h3>
-    <div class="bullet-description">
-        Grow your idea by consulting an extensive network of mentors from industry, venture capital and academia.
-    </div>
-  </div>
-  <div id="img-second"></div>
-  <div id="img-third"></div>
-  <div id="bullets-third">
-    <h3 class="bullet-title">3. SEED FUNDING</h3>
-    <div class="bullet-description">
-        Take the first steps toward exploring commercial viability of your idea with one of our small grants.
-    </div>
-  </div>
-  <div id="bullets-fourth">
-    <h3 class="bullet-title">4. BE A VENTURE AMBASSADOR</h3>
-    <div class="bullet-description">
-        With support from our team, learn to bring a culture of entrepreneurship to your department.
-    </div>
-  </div>
-  <div id="img-fourth"></div>
-</div>
+<main id="bullets">
+  <section id="img-first"></section>
+  <app-bullet id="bullets-first" [title]="bulletsMap?.first?.title" [description]="bulletsMap?.first?.description"></app-bullet>
+  <app-bullet id="bullets-second" [title]="bulletsMap?.second?.title" [description]="bulletsMap?.second?.description"></app-bullet>
+  <section id="img-second"></section>
+  <section id="img-third"></section>
+  <app-bullet id="bullets-third" [title]="bulletsMap?.third?.title" [description]="bulletsMap?.third?.description"></app-bullet>
+  <app-bullet id="bullets-fourth" [title]="bulletsMap?.fourth?.title" [description]="bulletsMap?.fourth?.description"></app-bullet>
+  <section id="img-fourth"></section>
+</main>
