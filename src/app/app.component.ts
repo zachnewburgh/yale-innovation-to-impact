@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ISection } from './shared/section.interface';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   displayNav: boolean;
-  sections: any[];
+  sections: ISection[];
 
   constructor() {
     this.sections = [
