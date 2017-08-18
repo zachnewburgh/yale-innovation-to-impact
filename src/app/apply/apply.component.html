@@ -1,12 +1,8 @@
-<footer id="links">
-  <div id="mailing=list">Apply Soon!</div>
-  <div id="link-title"><h3>CONNECT WITH US:</h3></div>
-  <div class="social-container" [title]="socialMedia['Twitter']" (click)="openPage('Twitter')">
-    <div class="social-logo"><img src="../assets/twitter-logo.png"></div>
-    <div class="social-name">Twitter</div>
-  </div>
-  <div class="social-container" [title]="socialMedia['Facebook']" (click)="openPage('Facebook')">
-      <div class="social-logo"><img src="../assets/fb-logo.png"></div>
-      <div class="social-name">Facebook</div>
-  </div>
-</footer>
+<main id="links">
+  <section id="mailing=list">Apply Soon!</section>
+  <section id="link-title"><h3>CONNECT WITH US:</h3></section>
+  <section *ngFor="let social of socials" class="social-container" [title]="social.url" (click)="openPage(social.url)">
+      <div class="social-logo"><img [src]="social.img"></div>
+      <div class="social-name">{{social.name}}</div>
+  </section>
+</main>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ISocialMedia } from './social-media.interface';
 
 @Component({
   selector: 'app-apply',
@@ -7,20 +8,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ApplyComponent implements OnInit {
 
-  socialMedia: any;
+  socials: ISocialMedia[];
 
   constructor() { }
 
   ngOnInit() {
-    this.socialMedia = {
-      Facebook: 'https://www.facebook.com/Innovation-to-Impact-at-Yale-1070091563126082/',
-      Twitter: 'https://twitter.com/innovateatyale'
-    }
+    this.socials = [
+      {
+        name: 'Twitter',
+        img: '../assets/twitter-logo.png',
+        url: 'https://twitter.com/innovateatyale'
+      },
+      {
+        name: 'Facebook',
+        img: '../assets/fb-logo.png',
+        url: 'https://www.facebook.com/Innovation-to-Impact-at-Yale-1070091563126082/'
+      }
+    ];
   }
 
-  openPage(name: string) {
-    const url = this.socialMedia[name];
-    return url ? window.open(url) : '';
+  openPage(url: string): void {
+    window.open(url);
   }
 
 }
