@@ -7,8 +7,28 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   displayNav: boolean;
+  sections: any[];
 
-  constructor() { }
+  constructor() {
+    this.sections = [
+      {
+        title: 'The Program',
+        id: 'about'
+      },
+      {
+        title: 'Objectives',
+        id: 'bullets'
+      },
+      {
+        title: 'Team',
+        id: 'team'
+      },
+      {
+        title: 'Apply',
+        id: 'apply'
+      }
+    ]
+  }
 
   toggleNav() {
     this.displayNav = !this.displayNav;

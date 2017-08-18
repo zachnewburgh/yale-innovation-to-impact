@@ -1,16 +1,10 @@
 <div class="wrapper">
   <nav id="nav-desktop">
-      <i id="menu-btn" class="material-icons" (click)="toggleNav()">menu</i>
-      <div class="link clickable" (click)="scrollTo('about')">The Program</div>
-      <div class="link clickable" (click)="scrollTo('bullets')">Objectives</div>
-      <div class="link clickable" (click)="scrollTo('team')">Team</div>
-      <div class="link clickable" (click)="scrollTo('apply')">Apply</div>
+    <i id="menu-btn" class="material-icons" (click)="toggleNav()">menu</i>
+    <div *ngFor="let section of sections" class="link clickable" (click)="scrollTo(section.id)">{{section.title}}</div>
   </nav>
   <nav id="nav-mobile" [hidden]="!displayNav">
-    <div class="nav-link" (click)="scrollTo('about')">The Program</div>
-    <div class="nav-link" (click)="scrollTo('bullets')">Objectives</div>
-    <div class="nav-link" (click)="scrollTo('team')">Team</div>
-    <div class="nav-link" (click)="scrollTo('apply')">Apply</div>
+    <div *ngFor="let section of sections" class="nav-link" (click)="scrollTo(section.id)">{{section.title}}</div>
   </nav>
   <main>
     <app-splash></app-splash>
