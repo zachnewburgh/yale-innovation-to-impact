@@ -1,17 +1,27 @@
 #links {
-    height: 40vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 5% 0;
+    padding: 10% 0;
     background-color: #13417F;
     color: white;
+}
+
+#sign-up {
+    min-width: 30%;
+}
+
+#social {
+    display: flex;
+    align-items: center;
+    padding-top: 5vh;
 }
 
 .social-container {
     display: flex;
     cursor: pointer;
+    padding: 0 3vw;
 }
 
 .social-logo > img {
@@ -26,6 +36,6 @@
 
 @media screen and (min-width: 500px) {
     #links {
-        height: 60vh;
+        padding: 5% 0;
     }
 }

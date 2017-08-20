@@ -8,6 +8,7 @@ import { TeamComponent } from './team/team.component';
 import { ApplyComponent } from './apply/apply.component';
 import { BulletsComponent } from './bullets/bullets.component';
 import { BulletComponent } from './bullets/bullet/bullet.component';
+import { SignupComponent } from './apply/signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { BulletComponent } from './bullets/bullet/bullet.component';
     TeamComponent,
     ApplyComponent,
     BulletsComponent,
-    BulletComponent
+    BulletComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule

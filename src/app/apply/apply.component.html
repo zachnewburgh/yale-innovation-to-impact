@@ -1,8 +1,11 @@
 <main id="links">
-  <section id="mailing=list">Apply Soon!</section>
-  <section id="link-title"><h3>CONNECT WITH US:</h3></section>
-  <section *ngFor="let social of socials" class="social-container" [title]="social.url" (click)="openPage(social.url)">
+  <section id="sign-up">
+    <app-signup></app-signup>
+  </section>
+  <section id="social">
+    <section *ngFor="let social of socials" class="social-container" [title]="social.url" (click)="openPage(social.url)">
       <div class="social-logo"><img [src]="social.img"></div>
       <div class="social-name">{{social.name}}</div>
+    </section>
   </section>
 </main>
