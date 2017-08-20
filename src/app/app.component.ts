@@ -25,8 +25,12 @@ export class AppComponent {
         id: 'team'
       },
       {
-        title: 'Apply',
+        title: 'Sign Up',
         id: 'apply'
+      },
+      {
+        title: 'Apply',
+        id: 'qualtrics'
       }
     ]
   }
@@ -37,6 +41,10 @@ export class AppComponent {
 
   scrollTo(section: string) {
     this.toggleNav();
-    return location.hash = `#${section}`;
+    if (section === 'qualtrics') {
+      window.open('https://yalesurvey.qualtrics.com/jfe/form/SV_3sD8p6YV3S1YmHz');
+    } else {
+      return location.hash = `#${section}`;
+    }
   }
 }
