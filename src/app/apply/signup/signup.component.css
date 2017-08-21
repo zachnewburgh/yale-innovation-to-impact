@@ -14,6 +14,7 @@
 
 #mc-embedded-subscribe {
     background-color: #e85c41;
+    -webkit-appearance: none;
 }
 
 #mc-embedded-subscribe:hover {
