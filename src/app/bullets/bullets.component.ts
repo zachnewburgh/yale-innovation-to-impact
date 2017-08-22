@@ -22,11 +22,11 @@ export class BulletsComponent implements OnInit {
       },
       third: {
         title: '3. SEED FUNDING',
-        description: 'Take the first steps toward exploring commercial viability of your idea with one of our small grants.'
+        description: 'Take the first steps toward exploring the commercial viability of your idea with one of our small grants.'
       },
       fourth: {
         title: '4. BE A VENTURE AMBASSADOR',
-        description: 'With support from our team, learn to bring a culture of entrepreneurship to your department.'
+        description: 'With support from our team, learn how to bring a culture of entrepreneurship to your department.'
       }
     }
   }
