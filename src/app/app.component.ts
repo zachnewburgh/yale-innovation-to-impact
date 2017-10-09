@@ -47,4 +47,9 @@ export class AppComponent {
       return location.hash = `#${section}`;
     }
   }
+
+  get checkBrowser() {
+     return (!!navigator.userAgent.match(/MSIE/) || !!navigator.userAgent.match(/Explorer/) ||
+             !!navigator.userAgent.match(/Edge/) || !!navigator.userAgent.match(/Trident/));
+  }
 }

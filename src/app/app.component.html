@@ -1,4 +1,4 @@
-<div class="wrapper">
+<div class="wrapper" *ngIf="!checkBrowser">
   <nav id="nav-desktop">
     <i id="menu-btn" class="material-icons" (click)="toggleNav()">menu</i>
     <div *ngFor="let section of sections" class="link clickable" (click)="scrollTo(section.id)">{{section.title}}</div>
@@ -15,4 +15,8 @@
   <footer>
     <app-apply id="apply"></app-apply>
   </footer>
+</div>
+
+<div *ngIf="checkBrowser" class="browser-message">
+    Please use Google Chrome, Mozilla Firefox, or Apple Safari.
 </div>

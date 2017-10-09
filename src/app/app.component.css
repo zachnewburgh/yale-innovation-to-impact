@@ -45,6 +45,12 @@
     cursor: pointer;
 }
 
+.browser-message {
+    padding-top: 45vh;
+    text-align: center;
+    font-size: 36px;
+}
+
 >>> .clickable {
     cursor: pointer;
 }
