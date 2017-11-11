@@ -17,7 +17,7 @@ export class SplashComponent implements OnInit {
   ngOnInit() {
     this.img = '../assets/innovation-logo.png';
     this.date = 'April 23-27, 2018';
-    this.dueDate = 'Jan. 5';
+    this.dueDate = 'JAN. 5';
     this.description = 'Empowering Substance Use Researchers to Translate their Innovations from the Lab to the World';
     this.applicationUrl = 'https://yalesurvey.qualtrics.com/jfe/form/SV_3sD8p6YV3S1YmHz';
   }
