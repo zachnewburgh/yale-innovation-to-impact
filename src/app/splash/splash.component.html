@@ -2,8 +2,8 @@
   <section id="announce">
     <div id="title"><img [src]="img"></div>
     <div id="date">
-      <h2>{{date}}</h2
-      ><h3>(apply by {{dueDate}})</h3>
+      <h2>{{date}}</h2>
+      <button id="apply-button" (click)="apply()">Apply by {{dueDate}}</button>
     </div>
   </section>
   <section id="description">{{description}}</section>
