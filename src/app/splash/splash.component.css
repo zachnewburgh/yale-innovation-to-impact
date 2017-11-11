@@ -26,12 +26,15 @@
     font-size: 1.05em;
 }
 
-#location > h2 {
+#date {
+    padding-bottom: 20vh;
+}
+
+#date > h2, #date > h3 {
     font-family: 'Times New Roman', Times, serif;
     font-weight: 100;
-    margin-top: 0;
-    padding-bottom: 20vh;
-    visibility: hidden;
+    margin: 0;
+    color: white;
 }
 
 #title > img {
