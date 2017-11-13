@@ -13,11 +13,11 @@ export class BulletsComponent implements OnInit {
   ngOnInit() {
     this.bulletsMap = {
       first: {
-        title: '1. FIVE-DAY BOOTCAMP IN PRODUCT DEVELOPMENT AND ENTREPRENEURSHIP',
+        title: '1. FIVE-DAY PROGRAM IN PRODUCT DEVELOPMENT AND ENTREPRENEURSHIP',
         description: 'Learn how to identify viable commercial products and efficiently take your product to market.'
       },
       second: {
-        title: '2. POST-BOOTCAMP VIRTUAL OFFICE HOURS',
+        title: '2. POST-PROGRAM VIRTUAL OFFICE HOURS',
         description: 'Grow your idea by consulting an extensive network of mentors from industry, venture capital and academia.'
       },
       third: {
