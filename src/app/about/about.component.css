@@ -8,6 +8,16 @@
     text-align: justify;
 }
 
+#info {
+    list-style: none;
+    text-align: justify;
+}
+
+.info-heading {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 @media screen and (min-width: 768px) {
     #about {
         padding: 2% 15% 10%;
