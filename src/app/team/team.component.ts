@@ -18,7 +18,7 @@ export class TeamComponent implements OnInit {
       {
         id: 'seth',
         imgPath: '../../assets/sf-sm.jpg',
-        name: 'Seth Feuerstein, MD, JD',
+        name: 'Seth Feuerstein, MD, PhD',
         role: 'Program Director (PI)',
         url: 'http://psychiatry.yale.edu/people/seth_feuerstein.profile'
       },
@@ -30,11 +30,32 @@ export class TeamComponent implements OnInit {
         url: 'https://medicine.yale.edu/psychiatry/people/p_simon.profile'
       },
       {
-        id: 'erika',
-        imgPath: '../../assets/es-bg.jpg',
-        name: 'Erika Smith, MBA',
-        role: 'Advisor',
-        url: 'http://ocr.yale.edu/about-ocr/our-staff/erika-smith'
+        id: 'gregory',
+        imgPath: '../../assets/gl-sm.jpg',
+        name: 'Gregory P. Licholai, MD, MBA',
+        role: 'Faculty Lead',
+        url: 'https://som.yale.edu/gregory-p-licholai'
+      },
+      {
+        id: 'kristin',
+        imgPath: '../../assets/kb-sm.png',
+        name: 'Kristin Budde, MD, MPH',
+        role: 'Curriculum Development Lead',
+        url: 'https://medicine.yale.edu/psychiatry/education/residency/about/kristin_budde.profile'
+      },
+      {
+        id: 'rick',
+        imgPath: '../../assets/rh-sm.jpg',
+        name: 'Rick Hunt, MBA',
+        role: 'Faculty/Mentor Lead',
+        url: 'http://yei.yale.edu/richard-hunt'
+      },
+      {
+        id: 'janis',
+        imgPath: '../../assets/jc-sm.jpg',
+        name: 'Janis Celone',
+        role: 'Program Coordinator',
+        url: 'http://people.yale.edu/search/janis_celone.profile'
       },
       {
         id: 'janie',
@@ -42,20 +63,6 @@ export class TeamComponent implements OnInit {
         name: 'Janie Merkel, PhD',
         role: 'Advisor',
         url: 'http://ycmd.yale.edu/people/janie-merkel'
-      },
-      {
-        id: 'rick',
-        imgPath: '../../assets/rh-bg.jpg',
-        name: 'Rick Hunt, MBA',
-        role: 'Faculty/Mentor Lead',
-        url: 'http://yei.yale.edu/richard-hunt'
-      },
-      {
-        id: 'joanne',
-        imgPath: '../../assets/jr-sm.jpg',
-        name: 'Joanne Richardson, BS',
-        role: 'Program Coordinator',
-        url: 'http://people.yale.edu/search/joanne_richardson.profile'
       }
     ];
   }
