@@ -58,12 +58,12 @@ export class TeamComponent implements OnInit {
         url: 'http://people.yale.edu/search/janis_celone.profile'
       },
       {
-        id: 'janie',
+        id: 'janiem',
         imgPath: '../../assets/jm-sm.jpg',
         name: 'Janie Merkel, PhD',
         role: 'Advisor',
         url: 'http://ycmd.yale.edu/people/janie-merkel'
-      }
+      },
     ];
   }
 
