@@ -25,7 +25,7 @@ export class AboutComponent implements OnInit {
       WHAT: `
         A five-day program in New Haven, CT focused on teaching participants diverse skills through hands-on-learning activities with
         guidance from dynamic leaders.  The program culminates in a Certificate in Entrepreneurship.`,
-      WHEN: `April 23-27, 2018.`,
+      WHEN: `The first short course occurred from April 23-27, 2018. Sign up for our mailing list to be the first to know when we announce the next short course.`,
       COST: `Costs for travel, food, and accommodations will be covered for applicants who are selected for this prestigious program.`,
       WHO: `Curious and committed innovators who are interested in both exploring what it takes to bring a product to market and
             applying creative solutions to combat substance abuse through the use of pharmaceuticals, diagnostics, biomedical devices,
